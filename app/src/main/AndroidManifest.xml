@@ -13,15 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AidlServer"
         tools:targetApi="31">
-        <service
-            android:name="com.example.aidldemo.services.CalculatorService"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.example.aidldemo.services.CalculatorService"/>
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </service>
+
 
         <activity
             android:name="com.example.aidldemo.activities.MainActivity"
@@ -32,6 +24,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service
+            android:name="com.example.aidldemo.services.CalculatorService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.aidldemo.services.CalculatorService"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
